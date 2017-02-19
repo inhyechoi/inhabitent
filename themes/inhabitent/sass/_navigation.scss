@@ -31,6 +31,25 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	background-color: rgba(0, 0, 0, .2);
+	height: 100px;
+
+	.container{
+		height: 50px;
+		display: flex;
+		justify-content: space-between;	
+		align-items: center;
+		margin: 0 auto;
+		max-width: 1120px;
+	}
+	.logo{
+		// margin-left: 50px;
+		display: flex;
+		// align-items: center;	
+		height: 100%;
+		width: 50px;
+	}
+
 
 	ul {
 		display: none;
@@ -59,7 +78,7 @@ a {
 			}
 
 			a {
-				width: 200px;
+				// width: 200px;
 			}
 
 			:hover > a,
@@ -87,6 +106,9 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		text-transform: uppercase;
+		width:90px;
+		color:white;
 	}
 
 	.current_page_item > a,
@@ -94,6 +116,7 @@ a {
 	.current_page_ancestor > a {
 	}
 }
+
 
 /* Small menu. */
 .menu-toggle,

@@ -1,0 +1,49 @@
+.about_text{
+	display: flex;
+	flex-wrap:wrap;
+	max-width: 1120px;
+	margin: 40px auto;
+	width: 55%;
+	font-family: merriweather,serif;
+	div{
+		h2{
+			text-align: center;
+			font-size: 50px;	
+			font-family: novecento,sans-serif;
+			text-transform: uppercase;
+		}
+	}
+}
+.about_hero_banner{
+	height: 100vh;
+	display: flex;
+}
+.about-hero-text{
+	// font-family: ;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	align-self:center;
+	color: white;
+	text-align: center;	
+	margin: auto auto;
+}
+.search .page-content .search-show i{
+	display: none;
+
+}
+.error404 .page-content .search-show i{
+	display: none;
+
+}
+.error404 .page-content .search-field{
+	display: block;
+	padding: 7.5px;
+	background: #f4f4f4;
+	padding-left: none;
+	margin-bottom: 35px;
+}
+.search .page-content .search-field{
+	display: block;
+	padding: 5px;
+}
