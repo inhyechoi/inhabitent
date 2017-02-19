@@ -4,7 +4,7 @@
     background: url("../../images/dark-wood@2x.png");
     height: 350px;
     justify-content: space-around;
-    padding: 70px 70px 0px 70px;
+    padding: 70px 40px 0px 40px;
     color: white;
         h3{
             margin-top: 0;
@@ -37,6 +37,9 @@
         
     }
     .copyright{
+        p{
+            text-transform: uppercase;
+        }
         
     }
     

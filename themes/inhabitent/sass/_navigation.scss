@@ -24,6 +24,17 @@ a {
 	}
 }
 
+/* white gap on the top of the page*/
+
+.site-branding p{
+	display: none;
+}
+
+.site-header .reverse-header h1 {
+    background: url("../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+    background-size: 50px 33px;
+}	
+
 /* Menus */
 
 .main-navigation {
@@ -42,14 +53,15 @@ a {
 		margin: 0 auto;
 		max-width: 1120px;
 	}
-	.logo{
-		// margin-left: 50px;
+	.header-logo{
 		display: flex;
-		// align-items: center;	
 		height: 100%;
 		width: 50px;
+		overflow: hidden;
+    	text-indent: 100%;
+    	white-space: nowrap;
+		height: 33px;
 	}
-
 
 	ul {
 		display: none;
@@ -109,6 +121,7 @@ a {
 		text-transform: uppercase;
 		width:90px;
 		color:white;
+		text-align: center;
 	}
 
 	.current_page_item > a,

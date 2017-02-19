@@ -29,11 +29,18 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="container">
-					<div class="logo">
+					<!--<div class="logo">
 						<a href="inhabitent/home">
 							<img src ="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" class ="logo"/>
 						</a>
-					</div>
+					</div>-->
+						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>">
+							<h1 class="header-logo" style="background: 
+								url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg) 
+								no-repeat; background-size: contain">Inhabitents Logo
+							</h1>
+						</a>
+
 
 
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
