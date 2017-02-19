@@ -9,28 +9,22 @@
 
 get_header(); ?>
 
+	<section class="about_hero_banner">
+		<h1 class="about-hero-text"> About </h1>
+	</section>
 
-<!--<section>
-
-	<div class="about_hero_banner">
-	<h1 class="about-hero-text"> About </h1>
-		
-	</div>
-</section>
-<section class="about_text">
-	<div class="ourstory">
-	<h2 >Our Story</h2>
-		<p>
+	<section class="about_text">
+		<div class="ourstory">
+			<h2 >Our Story</h2>
 			<?php echo CFS()->get( 'about_our_story' ); ?>
-		</p>
-	</div>
-	<div class="ourteam">
-	<h2> Our Team </h2>
-		<p>
+		</div>
+	
+		<div class="ourteam">
+			<h2> Our Team </h2>
 			<?php echo CFS()->get( 'about_our_team' ); ?>
-		</p>
-	</div>
-</section>
--->
+
+		</div><!-- #main -->
+	</section><!-- #primary-->
+
 
 <?php get_footer(); ?>
