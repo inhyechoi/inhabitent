@@ -1,6 +1,40 @@
-.entry-header {
-    a:visited{
+.site-header{
+    height:100px;
+}
+
+article{
+    .entry-header{
+        position: relative;
+        line-height: 0;
+        color: #fff;
+            img{
+                width: 750px;
+            }
+
+        .entry-title{
         position: absolute;
-        top: 120px;
+        left: 0;
+        top: 0;
+        background-color: #248a83;
+        padding: 0.7rem 1.8rem;
+        font-size: 2rem;
+        width: 35rem;
+        line-height: 1.5;
+            a{
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+        .entry-meta{
+        text-align: right;
+        position: absolute;
+        background-color: #248a83;
+        padding: 1rem 1rem;
+        bottom: 0;
+        left: 25rem;
+        }
+
     }
+
 }
