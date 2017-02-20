@@ -345,17 +345,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  border: none;
+  background: #248a83;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 1rem 2rem;
+  color: white; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -649,6 +646,10 @@ object {
       width: 280px; }
   .site-footer .copyright p {
     text-transform: uppercase; }
+
+.entry-header a:visited {
+  position: absolute;
+  top: 120px; }
 
 /*--------------------------------------------------------------
 # Widgets
