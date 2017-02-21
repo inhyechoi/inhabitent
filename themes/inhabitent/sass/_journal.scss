@@ -1,40 +1,54 @@
-.site-header{
-    height:100px;
+.blog .main-navigation{
+    border-bottom: 1px solid #e1e1e1;
 }
 
-article{
-    .entry-header{
-        position: relative;
-        line-height: 0;
-        color: #fff;
-            img{
-                width: 750px;
-            }
+.blog .site-content{
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+}
 
-        .entry-title{
+.blog #primary{
+    width:75%;
+    padding: 5% 5% 0 0 ;
+    border-right: 1px solid #e1e1e1;
+}
+    #secondary{
+        width:25%;
+        padding: 2rem 2rem 0 1rem ;
+        letter-spacing: 0.1rem;
+    }
+
+.blog .entry-header{
+    position: relative;
+    line-height: 0;
+    color: #fff;
+        img{
+            width: 100%;
+        }
+
+    .entry-title{
         position: absolute;
         left: 0;
         top: 0;
         background-color: #248a83;
         padding: 0.7rem 1.8rem;
         font-size: 2rem;
-        width: 35rem;
-        line-height: 1.5;
+        width: 36rem;
+        line-height: 1.3;
             a{
+                font-size: 2.3rem;
                 text-decoration: none;
                 color: #fff;
                 text-transform: uppercase;
             }
-        }
-        .entry-meta{
-        text-align: right;
+    }
+    .entry-meta{
         position: absolute;
         background-color: #248a83;
         padding: 1rem 1rem;
         bottom: 0;
-        left: 25rem;
+        right: 0;
         }
-
-    }
 
 }

@@ -220,6 +220,51 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweather") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.svg#merriweather") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweather") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweather") format("svg");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'novecento';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -397,10 +442,6 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -462,53 +503,48 @@ textarea {
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/home-hero.jpg") no-repeat center top;
   background-size: auto,  auto ,cover; }
 
-.about_text {
+.page-template-about .entry-header {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1120px;
-  margin: 40px auto;
-  width: 55%;
-  font-family: merriweather,serif; }
-  .about_text div h2 {
+  width: 100%;
+  height: 730px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
+  background-size: cover, cover; }
+  .page-template-about .entry-header .entry-title {
+    width: 100%;
     text-align: center;
-    font-size: 50px;
-    font-family: novecento,sans-serif;
-    text-transform: uppercase; }
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem; }
 
-.about_hero_banner {
-  height: 100vh;
+.page-template-about .entry-content {
+  margin: 4rem auto;
+  width: 800px;
+  line-height: 1.8; }
+  .page-template-about .entry-content h2 {
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.1rem; }
+
+.page-template-find-us #content {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  margin: 0 auto; }
 
-.about-hero-text {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: white;
-  text-align: center;
-  margin: auto auto; }
+.page-template-find-us #primary {
+  width: 75%;
+  padding: 5% 5% 0 0;
+  border-right: 1px solid #e1e1e1; }
 
-.search .page-content .search-show i {
-  display: none; }
-
-.error404 .page-content .search-show i {
-  display: none; }
-
-.error404 .page-content .search-field {
-  display: block;
-  padding: 7.5px;
-  background: #f4f4f4;
-  padding-left: none;
-  margin-bottom: 35px; }
-
-.search .page-content .search-field {
-  display: block;
-  padding: 5px; }
+.page-template-find-us #secondary {
+  width: 25%;
+  padding: 2rem 2rem 0 1rem;
+  letter-spacing: 0.1rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -617,21 +653,26 @@ object {
   height: 350px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 70px 40px 0px 40px;
+  padding: 0 7rem;
   color: white; }
   .site-footer h3 {
     margin-top: 0;
-    color: #d99054; }
+    color: #d99054;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem; }
   .site-footer a {
     color: white;
     text-decoration: none; }
   .site-footer .contactInfo {
+    margin-top: 4rem;
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
   .site-footer .businessHour {
+    margin-top: 4rem;
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
   .site-footer .footerLogo_div {
+    margin-top: 4rem;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     display: -ms-flexbox;
@@ -643,37 +684,54 @@ object {
     .site-footer .footerLogo_div img {
       width: 280px; }
   .site-footer .copyright p {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: novecento,sans-serif; }
 
-.site-header {
-  height: 100px; }
+.blog .main-navigation {
+  border-bottom: 1px solid #e1e1e1; }
 
-article .entry-header {
+.blog .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: 0 auto; }
+
+.blog #primary {
+  width: 75%;
+  padding: 5% 5% 0 0;
+  border-right: 1px solid #e1e1e1; }
+
+#secondary {
+  width: 25%;
+  padding: 2rem 2rem 0 1rem;
+  letter-spacing: 0.1rem; }
+
+.blog .entry-header {
   position: relative;
   line-height: 0;
   color: #fff; }
-  article .entry-header img {
-    width: 750px; }
-  article .entry-header .entry-title {
+  .blog .entry-header img {
+    width: 100%; }
+  .blog .entry-header .entry-title {
     position: absolute;
     left: 0;
     top: 0;
     background-color: #248a83;
     padding: 0.7rem 1.8rem;
     font-size: 2rem;
-    width: 35rem;
-    line-height: 1.5; }
-    article .entry-header .entry-title a {
+    width: 36rem;
+    line-height: 1.3; }
+    .blog .entry-header .entry-title a {
+      font-size: 2.3rem;
       text-decoration: none;
       color: #fff;
       text-transform: uppercase; }
-  article .entry-header .entry-meta {
-    text-align: right;
+  .blog .entry-header .entry-meta {
     position: absolute;
     background-color: #248a83;
     padding: 1rem 1rem;
     bottom: 0;
-    left: 25rem; }
+    right: 0; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -717,8 +775,8 @@ a {
   display: block;
   float: left;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 100px; }
+  font-family: novecento,sans-serif;
+  text-transform: uppercase; }
   .main-navigation .container {
     height: 50px;
     display: -ms-flexbox;
@@ -767,7 +825,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     width: 90px;
-    color: white;
+    color: #248a83;
     text-align: center; }
 
 /* Small menu. */

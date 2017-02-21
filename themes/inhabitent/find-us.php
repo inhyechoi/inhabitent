@@ -1,5 +1,7 @@
+<?php /* Template Name: find-us */ ?>
+<!-- this name is to setup the custom page template -->
 
-	<?php
+<?php
 /**
  * The template for displaying all pages.
  *

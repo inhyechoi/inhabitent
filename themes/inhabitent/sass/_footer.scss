@@ -4,11 +4,13 @@
     background: url("../../images/dark-wood@2x.png");
     height: 350px;
     justify-content: space-around;
-    padding: 70px 40px 0px 40px;
+    padding: 0 7rem;
     color: white;
         h3{
             margin-top: 0;
             color:#d99054;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
         }
         a{
             color: white;
@@ -18,14 +20,18 @@
 
 
     .contactInfo{
+        margin-top: 4rem;
         flex-basis: 25%;
 
     }
     .businessHour{
+        margin-top: 4rem;
         flex-basis: 25%;
+
 
     }
     .footerLogo_div{
+        margin-top: 4rem;
         flex-basis: 50%;
         display: flex;
 	    align-items: flex-start;
@@ -39,6 +45,8 @@
     .copyright{
         p{
             text-transform: uppercase;
+            font-family: novecento,sans-serif;
+
         }
         
     }

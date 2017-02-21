@@ -14,11 +14,11 @@
 				<h3> Contact Info</h3>
 					<a href="email">
 						<i class="fa fa-envelope" aria-hidden="true"></i> 
-						<span class="underlinehover">info@inhabitent.com </span>
+						<a href="info@inhabitent.com">info@inhabitent.com</a>
 					</a>
 					<p>
 						<i class="fa fa-phone" aria-hidden="true"></i>
-						<span class="underlinehover"> Phone number here </span>
+						<a href="tel:778-456-7891">778-456-7891</a>
 					</p>
 					<p>
 						<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>

@@ -42,8 +42,9 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
-	background-color: rgba(0, 0, 0, .2);
-	height: 100px;
+	font-family: novecento,sans-serif;
+    text-transform: uppercase;
+
 
 	.container{
 		height: 50px;
@@ -120,7 +121,7 @@ a {
 		text-decoration: none;
 		text-transform: uppercase;
 		width:90px;
-		color:white;
+		color:#248a83;
 		text-align: center;
 	}
 
