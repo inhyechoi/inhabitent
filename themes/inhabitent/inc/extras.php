@@ -22,15 +22,23 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 // custom login for theme
-function wp_admin_logo() {
-     echo '<style type="text/css">                                                                   
-         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
-         height: 120px !important; width: 310px !important; margin-left: -40px; background-size: contain !important;}                            
-     </style>';
-}
-add_action('login_head', 'wp_admin_logo');
+function inhabitent_admin_logo() {
+     echo '<style>                                                                   
+         h1 a { 
+             background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
+         height: 60px !important; width: 310px !important; background-size: contain !important;
+         }
+         #login .button.button-primary{
+            background-color: #248A83;
+        }                            
+    </style>';
 
-function admin_logo_url( $url ) {
-    return get_bloginfo( 'url' );
 }
-add_filter( 'login_headerurl', 'admin_logo_url' );
+
+
+add_action('login_head', 'inhabitent_admin_logo');
+
+function inhabitent_admin_logo_url( $url ) {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'inhabitent_admin_logo_url' );
