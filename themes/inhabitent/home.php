@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-
+ <div><a class="read-more" href="<?php the_permalink(); ?>"> Read more &#8594 </a></div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -31,6 +31,8 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+		
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
