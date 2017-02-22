@@ -11,6 +11,18 @@
         padding: 5% 5% 0 0 ;
         border-right: 1px solid #e1e1e1;
     }
+        .readmore{
+            margin-bottom: 4.5rem;
+        }
+        .read-more {
+            text-decoration:none;
+            padding:0.8rem 1.5rem;
+            border: 1px solid black;
+            text-transform: uppercase;
+            font-family: novecento,sans-serif;
+            color: black;
+            font-size: 0.9rem;
+        }
         .entry-header{
         position: relative;
         line-height: 0;
@@ -42,6 +54,9 @@
                 padding: 1rem 1rem;
                 bottom: 0;
                 right: 0;
+                a{
+                    color:white;
+                }
             }
         }
 

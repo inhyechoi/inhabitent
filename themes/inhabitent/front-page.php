@@ -11,31 +11,53 @@ get_header(); ?>
 
 
 <div class="shopstuff container">
-    <h2>shop stuff</h2>
-</div>
+    <!--<h2>shop stuff</h2>
+    <?php    
+        $terms = get_terms( array(
+          'taxonomy' => 'product_type',
+          'orderby' => 'name', ));
+        foreach ($terms as $term) :
+          $url = get_term_link ($term->slug , 'product_type');              
+    ?>  
+      <div class="shop-stuff-item">
+          <div class="product-icon-image">       
+              <img src="<?php echo get_template_directory_uri();?>../images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+          </div>
+          <p> <?php echo $term->description; ?> </p>
+          <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a> </div>
+                        
+    <?php endforeach; ?>
+</div>-->
 
 <div class="latest-blogpost">
     <h2>inhabitent journal</h2>
-<?php
-   global $post;
-     $args = array(
-       'post_type' => 'post',
-       'order' => 'ASC',
-       'posts_per_page' => 3);
+    <?php
+      global $post;
+      $args = array(  'post_type' => 'post',
+                      'order' => 'ASC',
+                      'posts_per_page' => 3
+                    );
+
      $product_posts = get_posts( $args ); // returns an array of posts
-   ?>
-   <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-     
+    ?>
+    <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+      <section class="single-thumbnail">
      <!--grab from content-sigle.php-->  
-     <?php the_post_thumbnail( 'thumbnail' ); ?>
-     <div class="entry-meta">
-       <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> 
-     </div><!-- .entry-meta -->
-     <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+     <?php the_post_thumbnail( 'medium_large' ); ?>
+        <div class="text-area">
+        <div class="entry-meta">
+        <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> 
+        </div><!-- .entry-meta -->
+        <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
      
      
-     <div><a class="read-more" href="<?php the_permalink(); ?>"> Read Entry </a></div>
+        <div>
+          <a class="read-entry" href="<?php the_permalink(); ?>"> Read Entry </a></div>
+        </div>
+     </section>
+   
    <?php endforeach; wp_reset_postdata(); ?>
+
     
 </div>
 

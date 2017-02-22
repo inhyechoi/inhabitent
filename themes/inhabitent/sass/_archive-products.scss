@@ -1,0 +1,12 @@
+.archive section{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+
+       article{
+            flex: 0 1 23%;
+            max-width: 23%;
+            margin-bottom: 1.5rem;
+       }
+}
+

@@ -1,9 +1,60 @@
-
-    .hero-banner{
+ .hero-banner{
 	height: 800px;
 	background:
      url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,  
      linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), 
      url("../../images/home-hero.jpg") no-repeat center top;
 	background-size:auto,  auto ,cover;
+}
+.home .site-content{
+    text-align: center;
+    h2{
+        font-family: novecento,sans-serif;
+        font-weight: lighter;
+        font-size: 3rem;
+    }
+}
+
+.home .latest-blogpost{
+    width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+    h2{
+        width:100%
+    }
+    .single-thumbnail{
+        margin: 0 1rem;
+        width:  340px;
+        text-align: left;
+        line-height: 1;
+        border: 1px solid lightgrey;
+        padding-bottom: 0.6rem;
+        .text-area{
+            padding: 1rem 0.5rem;
+            height: 140px;
+        }
+        img{
+            height: 240px;
+        }
+        .entry-meta{
+            font-size: 0.8rem;
+        }
+        h3{
+            text-transform: uppercase;
+            font-size:1.3rem;
+            letter-spacing: 0.1rem;
+            color: #248a83;
+            margin-bottom: 2rem;
+        }
+        .read-entry{
+            font-family: novecento,sans-serif;
+            text-transform: uppercase;
+            text-decoration:none;
+            color: black;
+            border: 1px solid black;
+            padding: 0.7rem 1rem;
+        }
+    }
 }
