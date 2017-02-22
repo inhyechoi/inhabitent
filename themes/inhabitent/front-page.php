@@ -9,6 +9,7 @@ get_header(); ?>
 <div class="hero-banner">
 </div>  
 
+
 <div class="shopstuff container">
     <h2>shop stuff</h2>
 </div>

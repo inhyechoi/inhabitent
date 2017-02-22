@@ -6,6 +6,7 @@
     justify-content: space-around;
     padding: 0 7rem;
     color: white;
+    line-height: 1.4;
         h3{
             margin-top: 0;
             color:#d99054;
@@ -16,18 +17,21 @@
             color: white;
             text-decoration: none;
         }
-       
-
 
     .contactInfo{
         margin-top: 4rem;
         flex-basis: 25%;
-
+        i{
+            font-size: 1.25rem;
+            margin-right: .5rem;
+        }
     }
     .businessHour{
         margin-top: 4rem;
         flex-basis: 25%;
-
+        .bolden{
+            font-weight: bold;
+        }
 
     }
     .footerLogo_div{
@@ -43,7 +47,9 @@
         
     }
     .copyright{
+        display: flex;
         p{
+            align-self: center;
             text-transform: uppercase;
             font-family: novecento,sans-serif;
 

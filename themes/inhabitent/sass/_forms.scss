@@ -2,18 +2,27 @@
 # Forms
 --------------------------------------------------------------*/
 
+
+label{
+	font-family: novecento,sans-serif;
+	text-transform: uppercase;
+}
+
+
 /* Buttons */
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+	font-family: novecento,sans-serif;
+	text-transform: uppercase;
 	border: none;
 	background-color:  #248a83;
 	color: rgba(0, 0, 0, .8);
 	@include font-size(1);
     line-height: 1;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.3rem;
 	color:white;
 
 	&:hover {

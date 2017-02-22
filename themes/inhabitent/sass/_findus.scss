@@ -1,16 +1,60 @@
-.page-template-find-us #content{
-    display: flex;
-    width:100%;
-    margin: 0 auto;
+.page-template-find-us .main-navigation{
+    border-bottom: 1px solid #e1e1e1;
 }
 
-.page-template-find-us #primary{
-    width:75%;
-    padding: 5% 5% 0 0 ;
-    border-right: 1px solid #e1e1e1;
+.page-template-find-us #content{
+    display: flex;
+    width:1120px;
+    margin: 0 auto;
+    #primary{
+        width:75%;
+        padding: 5% 5% 0 0 ;
+        border-right: 1px solid #e1e1e1;
+    }
+        .entry-header{
+            line-height: 0;
+            color: #fff;
+            text-transform: uppercase;
+            h1{
+                font-size: 2.5rem;
+                width: 36rem;
+                line-height: 1.3;
+                color:black;
+            }
+        }
+        .entry-content{
+              h2{
+                font-size: 2rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+    #secondary{
+        padding: 3rem 0 0 5%;
+        width: 27%;
+        h2{
+            letter-spacing: 0.1rem;
+        }
+        .textwidget{
+            line-height: 2.7;
+            i {
+                margin-right: .5rem;
+                width: 20px;
+            }  
+            a{
+                text-decoration: none;
+            }
+            .bolden{
+                font-weight: bold;
+            }
+        }
+
+        #archives-2 ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+                a{
+                    text-decoration: none;
+                }
+        }
+    }
 }
- .page-template-find-us #secondary{
-        width:25%;
-        padding: 2rem 2rem 0 1rem ;
-        letter-spacing: 0.1rem;
- }
