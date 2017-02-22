@@ -15,7 +15,7 @@ get_header(); ?>
     <?php    
         $terms = get_terms( array(
           'taxonomy' => 'product_type',
-          'orderby' => 'name', ));
+           'orderby' => 'name', ));
         foreach ($terms as $term) :
           $url = get_term_link ($term->slug , 'product_type');              
     ?>  
@@ -24,7 +24,9 @@ get_header(); ?>
               <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
           </div>
           <p> <?php echo $term->description; ?> </p>
-          <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a> </div>
+         
+          <button><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a></button>
+      </div>
                         
     <?php endforeach; ?>
 </div>

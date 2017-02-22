@@ -3,29 +3,29 @@
        flex-wrap: wrap;
        justify-content: space-between;
 
-       article{
+       li{
            border: 1px solid #e1e1e1;
            flex: 0 1 23%;
            max-width: 23%;
            margin-bottom: 1.5rem;
-           .entry-header{
-                height: 250px;
-                overflow: hidden;
-                position: relative;
+           list-style:none;
+           text-align: center;
+           .archive-product{
+               position: relative;
+               height: 250px;
+               overflow: hidden;
            }
+
            img{
+               position: absolute;
                left: 50%;
-                max-height: 250px;
-                max-width: none;
-                position: absolute;
-                top: 50%;
-                transform: translate(-50%,-52%);
-                width: auto;
-           }
-           h2{
-              
+               top: 50%;
+               border-bottom: 5px solid lightgray;
+               max-height: 250px;
+               max-width: none;
+               width: auto;
+               transform: translate(-50%, -52%);
            }
        }
-
 }
 

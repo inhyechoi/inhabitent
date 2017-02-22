@@ -49,19 +49,25 @@ a {
 	.container{
 		height: 50px;
 		display: flex;
-		justify-content: space-between;	
+		justify-content: flex-end;	
 		align-items: center;
 		margin: 0 auto;
 		max-width: 1120px;
 	}
 	.header-logo{
-		display: flex;
+		position: absolute;
+		top: 20px;
+		left: 60px;
 		height: 100%;
 		width: 50px;
 		overflow: hidden;
     	text-indent: 100%;
     	white-space: nowrap;
 		height: 33px;
+	}
+
+	.fa{
+		color: #248a83;
 	}
 
 	ul {
@@ -89,9 +95,8 @@ a {
 					left: 100%;
 				}
 			}
+			a{
 
-			a {
-				// width: 200px;
 			}
 
 			:hover > a,

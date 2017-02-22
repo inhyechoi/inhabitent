@@ -1,0 +1,34 @@
+.single-products .main-navigation{
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.single-products .shop-item{  
+    display:flex;
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    .item-img{
+        flex-basis: 50%;
+    }
+    .item-text{
+        flex-basis: 50%;
+        padding-left: 2rem;
+        h2{
+            color: #d99054;
+            font-size: 2.5rem;
+            margin-top:0;
+            text-transform: uppercase;
+        }
+        button{
+            background-color: white;
+            border: 1px solid black;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        i{
+            padding-right: 0.5rem;
+        }
+    }
+}
