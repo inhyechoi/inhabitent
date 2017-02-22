@@ -11,7 +11,7 @@ get_header(); ?>
 
 
 <div class="shopstuff container">
-    <!--<h2>shop stuff</h2>
+    <h2>shop stuff</h2>
     <?php    
         $terms = get_terms( array(
           'taxonomy' => 'product_type',
@@ -21,13 +21,13 @@ get_header(); ?>
     ?>  
       <div class="shop-stuff-item">
           <div class="product-icon-image">       
-              <img src="<?php echo get_template_directory_uri();?>../images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+              <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
           </div>
           <p> <?php echo $term->description; ?> </p>
           <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a> </div>
                         
     <?php endforeach; ?>
-</div>-->
+</div>
 
 <div class="latest-blogpost">
     <h2>inhabitent journal</h2>
