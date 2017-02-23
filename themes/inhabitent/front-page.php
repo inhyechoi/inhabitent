@@ -23,6 +23,7 @@ get_header(); ?>
           <div class="product-icon-image">       
               <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
           </div>
+
           <p> <?php echo $term->description; ?> </p>
          
           <button><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a></button>

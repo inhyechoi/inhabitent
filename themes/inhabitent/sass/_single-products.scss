@@ -1,11 +1,10 @@
 .single-products .main-navigation{
     border-bottom: 1px solid #e1e1e1;
 }
-
 .single-products .shop-item{  
     display:flex;
     width: 1120px;
-    margin: 0 auto;
+    margin: 0 auto 7rem auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
     .item-img{
@@ -18,6 +17,7 @@
             color: #d99054;
             font-size: 2.5rem;
             margin-top:0;
+            margin-bottom: 0;
             text-transform: uppercase;
         }
         button{
@@ -30,6 +30,10 @@
         }
         i{
             padding-right: 0.5rem;
+        }
+        .item-price{
+            font-family: novecento,sans-serif;
+            font-size: 1.8rem;
         }
     }
 }

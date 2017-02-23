@@ -16,8 +16,14 @@ get_header(); ?>
 
 			<?php the_post_thumbnail( 'large' ); ?>
 			</div>
+		
+
 			<div class="item-text">
 					<h2><?php the_title(); ?></h2>
+					<div class="item-price">
+          				<?php echo CFS()->get('price'); ?>
+		   			</div>
+					
 					<p><?php the_excerpt(); ?></p>
 					<button><a href="http://www.facebook.com"><i class="fa fa-facebook"></i>Like</a></button>
 					<button><a href="http://www.twitter.com"><i class="fa fa-twitter"></i>Tweet</a></button>
