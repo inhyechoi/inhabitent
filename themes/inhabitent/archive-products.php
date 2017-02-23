@@ -12,6 +12,8 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+
+
 			<header class="page-header">
 				<?php
 					function product_archive_title($title) {
@@ -22,6 +24,7 @@ get_header(); ?>
 						}
 						add_filter('get_the_archive_title', 'product_archive_title');
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
+					
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header>

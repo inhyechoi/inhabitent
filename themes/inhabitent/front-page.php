@@ -21,7 +21,7 @@ get_header(); ?>
     ?>  
       <div class="shop-stuff-item">
           <div class="product-icon-image">       
-              <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+              <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
           </div>
 
           <p> <?php echo $term->description; ?> </p>
