@@ -27,6 +27,23 @@ get_header(); ?>
 					
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+<ul class="product-type-list">
+ <?php    
+        $terms = get_terms( array(
+          'taxonomy' => 'product_type',
+           'orderby' => 'name', ));
+        foreach ($terms as $term) :
+          $url = get_term_link ($term->slug , 'product_type');              
+    ?>  
+
+         <li>
+         <a href ='<?php echo $url ?>' class='button'><h2><?php echo $term->name;?></h2></a>
+		  </li>
+     
+                        
+    <?php endforeach; ?>
+	</ul>
+
 			</header>
 			
 			<ul class="shop-flexbox">
@@ -51,12 +68,10 @@ get_header(); ?>
 					</li>
 				<?php endwhile; ?>
 			</ul>
-			<?php the_posts_navigation(); ?>	
-			<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			
 			<?php endif; ?>
 				</section>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

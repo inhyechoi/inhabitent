@@ -66,3 +66,11 @@ function inhabitent_about_heroimg_css() {
     wp_add_inline_style('red-starter-style', $hero_css);
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_heroimg_css' );
+
+function post_list($query) {
+    if (is_post_type_archive('products')){
+        $query->set('posts_per_page', 16);
+        return;
+    }
+}
+add_action('pre_get_posts', 'post_list', 1);

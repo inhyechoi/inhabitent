@@ -83,15 +83,23 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 
-
-
-
 function red_starter_scripts() {
+
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	
+	// Enqueue jQuery for api for hide comment button
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'red_comments', get_template_directory_uri(). '/js/api.js', array( 'jquery' ), false, true );
+	//localize the script
+	wp_localize_script( 'red_comments', 'red_vars', array(
+      'rest_url' => rest_url(  ),
+      'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+      'post_id' => get_the_ID()
+  ) );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

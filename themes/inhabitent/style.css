@@ -1023,6 +1023,33 @@ object {
   padding-left: 0;
   margin: 0 auto; }
 
+.archive .page-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1120px;
+  margin: 0 auto; }
+  .archive .page-header .taxonomy-description {
+    text-align: center; }
+  .archive .page-header h1 {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .archive .page-header ul {
+    margin-bottom: 2.5rem; }
+  .archive .page-header li {
+    list-style: none;
+    display: inline-block;
+    width: 90px; }
+    .archive .page-header li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center; }
+      .archive .page-header li a h2 {
+        font-size: 1.2rem;
+        font-weight: lighter; }
+
 .archive .allproducts {
   border-top: 1px dashed #e1e1e1;
   padding-top: 3rem;
