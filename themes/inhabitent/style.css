@@ -593,15 +593,22 @@ textarea {
     text-transform: uppercase;
     font-size: 3rem; }
 
+.page-template-about .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
 .page-template-about .entry-content {
-  margin: 4rem auto;
-  width: 800px;
+  margin: 3rem auto;
+  max-width: 800px;
   line-height: 1.8; }
   .page-template-about .entry-content h2 {
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.1rem; }
+  .page-template-about .entry-content .BodyA span {
+    line-height: 1.8; }
 
 .page-template-find-us .main-navigation {
   border-bottom: 1px solid #e1e1e1; }
@@ -631,9 +638,12 @@ textarea {
     letter-spacing: 0.1rem; }
   .page-template-find-us #content #secondary {
     padding: 3rem 0 0 5%;
-    width: 27%; }
+    width: 28%; }
     .page-template-find-us #content #secondary h2 {
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      text-transform: uppercase; }
+    .page-template-find-us #content #secondary .day-of-week {
+      font-weight: bold; }
     .page-template-find-us #content #secondary .textwidget {
       line-height: 2.7; }
       .page-template-find-us #content #secondary .textwidget i {
@@ -857,9 +867,12 @@ object {
         color: white; }
   .blog .site-content #secondary {
     padding: 3rem 0 0 5%;
-    width: 27%; }
+    width: 28%; }
     .blog .site-content #secondary h2 {
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      text-transform: uppercase; }
+    .blog .site-content #secondary .day-of-week {
+      font-weight: bold; }
     .blog .site-content #secondary .textwidget {
       line-height: 2.7; }
       .blog .site-content #secondary .textwidget i {
@@ -929,9 +942,12 @@ object {
       margin-right: 1.5rem; }
   .single-post .site-content #secondary {
     padding: 3rem 0 0 5%;
-    width: 27%; }
+    width: 28%; }
     .single-post .site-content #secondary h2 {
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      text-transform: uppercase; }
+    .single-post .site-content #secondary .day-of-week {
+      font-weight: bold; }
     .single-post .site-content #secondary .textwidget {
       line-height: 2.7; }
       .single-post .site-content #secondary .textwidget i {
@@ -956,7 +972,8 @@ object {
   display: flex;
   width: 1120px;
   margin: 0 auto;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   .single-products .shop-item .item-img {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
@@ -978,13 +995,18 @@ object {
     .single-products .shop-item .item-text i {
       padding-right: 0.5rem; }
 
+ul {
+  padding-left: 0; }
+
 .archive .allproducts {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  margin: 0 auto;
+  width: 1120px; }
   .archive .allproducts li {
     border: 1px solid #e1e1e1;
     -ms-flex: 0 1 23%;

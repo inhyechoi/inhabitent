@@ -17,9 +17,14 @@
 	
 }
 
+.page-template-about .container{
+	margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
 .page-template-about .entry-content{
-	margin: 4rem auto;
-    width: 800px;
+	margin: 3rem auto;
+    max-width: 800px;
 	line-height: 1.8;
 		h2{
 			letter-spacing: 0.1rem;
@@ -27,4 +32,8 @@
 			text-transform: uppercase;
 			font-size: 2.1rem;
 		}
+		.BodyA span{
+		line-height: 1.8;
 }
+}
+

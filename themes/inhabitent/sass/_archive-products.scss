@@ -1,8 +1,14 @@
+    ul{
+           padding-left: 0;
+       }
+
 .archive .allproducts{
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
-
+       margin: 0 auto;
+       width: 1120px;
+   
        li{
            border: 1px solid #e1e1e1;
            flex: 0 1 23%;
