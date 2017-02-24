@@ -1,13 +1,14 @@
 .home .main-navigation{
 	li a{
-		color: white;
+		color: $color__background-body;
 	}
 	.fa{
-		color: white;
+		color: $color__background-body;
+	}
+    i:hover{
+		color:#f0e4d1;
 	}
 }
-
-
 .hero-banner{
 	height: 800px;
 	background:
@@ -19,7 +20,7 @@
 .home .site-content{
     text-align: center;
     h2{
-        font-family: novecento,sans-serif;
+        font-family: $font__headings, sans-serif;
         font-weight: lighter;
         font-size: 3rem;
     }
@@ -46,7 +47,7 @@
                width: 8.5rem;
                a{
                    text-decoration:none;
-                   color:white;
+                   color:$color__background-body;
                    font-size: 0.9rem;
                }
             }
@@ -71,7 +72,7 @@
         text-align: left;
         line-height: 1;
         border: 1px solid #d3d3d3;
-        padding-bottom: 0.6rem;
+        padding-bottom: 1.6rem;
         .text-area{
             padding: 1rem 0.5rem;
             height: 150px;
@@ -94,7 +95,7 @@
             color: black;
         }
         .read-entry{
-            font-family: novecento,sans-serif;
+            font-family: $font__headings, sans-serif;
             text-transform: uppercase;
             text-decoration:none;
             color: black;
@@ -102,27 +103,25 @@
             padding: 0.7rem 1rem;
         }
         .read-entry:hover{
-            background: #248a83;  
-            color: white;
+            background: $color__link; 
+            color: $color__background-body;
         }
     }
 }
-
 .home .story-wrapper{
     width: 1120px;
     margin: 0 auto;
-    color: white;
+    color: $color__background-body;
     text-align: left;
     height: 600px;
     position: relative;
     a{
-        font-family: novecento,sans-serif;
+        font-family: $font__headings, sans-serif;
         text-transform: uppercase;
         text-decoration: none;
-        color: white;
-        border: 1px solid white;
+        color: $color__background-body;
+        border: 1px solid $color__background-body;
         padding: 0.5rem 1.2rem;
-
     }
     button{
         position: absolute;
@@ -170,7 +169,6 @@
         font-size: 1.5rem;
     }
 }
-
 .home .search-box{
     height: 50px;
     position: relative;

@@ -69,14 +69,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 
-@import "category";
-@import "tag";
+
 @import "footer";
 @import "journal";
+@import "search-result";
 @import "single";
 @import "single-products";
 @import "taxonomy-product_type";
 @import "archive-products";
+@import "archive";
+
 
 
 @import "widgets";

@@ -21,7 +21,7 @@
             text-transform: uppercase;
         }
         button{
-            background-color: white;
+            background-color: $color__background-body;
             border: 1px solid black;
             a{
             text-decoration: none;
@@ -31,14 +31,12 @@
             padding-right: 0.5rem;
             }
         }
-        
-
-         button:hover{
-            background: #248a83;  
-            color: white;
+        button:hover{
+            background: $color__link; 
+            color: $color__background-body;
         }
         .item-price{
-            font-family: novecento,sans-serif;
+            font-family: $font__headings, sans-serif;
             font-size: 1.8rem;
         }
     }

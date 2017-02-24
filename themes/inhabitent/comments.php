@@ -18,7 +18,6 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
-
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?>
@@ -28,10 +27,8 @@ if ( post_password_required() ) {
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
 			<div class="nav-links">
-
 				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
-
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
@@ -48,10 +45,8 @@ if ( post_password_required() ) {
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
 			<div class="nav-links">
-
 				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
-
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // Check for comment navigation. ?>

@@ -35,7 +35,6 @@
 							</h1>
 						</a>
 
-
 				<button class="menu-toggle" 
 						aria-controls="primary-menu" 
 						aria-expanded="false">
@@ -43,17 +42,10 @@
 				</button>
 					<?php wp_nav_menu( 
 						array( 'theme_location' => 'primary', 
-								'menu_id' => 'primary-menu' ) ); 
+							   'menu_id' => 'primary-menu' ) ); 
 					?>
-				<div class="search-box">
-					<a href="search">
-						<i class="fa fa-search"></i> 
-						<!--<input type="text" />-->
-					</a>
-				</div>
-
-
-					
+				
+					<?php get_search_form() ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 		<div id="content" class="site-content">

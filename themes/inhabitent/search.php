@@ -18,18 +18,12 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
 			<?php endwhile; ?>
-
-			<?php red_starter_numbered_pagination(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+				<?php red_starter_numbered_pagination(); ?>
+			<?php else : ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php endif; ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

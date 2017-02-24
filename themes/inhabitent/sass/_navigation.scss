@@ -36,16 +36,42 @@ a {
 }	
 
 /* Menus */
-
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
-	font-family: novecento,sans-serif;
+	font-family: $font__headings, sans-serif;
     text-transform: uppercase;
-
-
+	#primary-menu a:hover{
+		color:#f0e4d1;
+	}
+	.search-box a{
+		width:50px;
+	}		
+	fieldset{
+		border: 0;
+		.search-field{
+			width: 0;
+			border: 0;
+			padding: 0;
+		}
+		input{
+			font-family: $font__headings;
+			font-size: 0.8rem;
+		}
+		input:focus{
+			outline:none;
+		}
+		button{
+			background-color:transparent;
+			padding:0;
+		}
+	}
+	button:focus{
+		outline:none;
+	}
+	
 	.container{
 		height: 50px;
 		display: flex;
@@ -69,13 +95,11 @@ a {
 	.fa{
 		color: #248a83;
 	}
-
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -83,31 +107,17 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
-
 			ul {
 				left: -999rem;
 				top: 0;
 			}
-
 			li {
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
 				}
 			}
-			a{
-
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
@@ -116,17 +126,13 @@ a {
 	li {
 		float: left;
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 		text-transform: uppercase;
 		width:90px;
-		color:#248a83;
+		color:$color__link;
 		text-align: center;
 	}
 

@@ -1,9 +1,15 @@
 .archive .main-navigation{
     border-bottom:1px solid #e1e1e1;
-    background-color: white;
+    background-color: $color__background-body;
     opacity: 0.9;
     position: fixed;
     z-index: 1;
+    #primary-menu a:hover{
+		color:#2f1339;
+	}
+    i:hover{
+		color:#2f1339;
+	}
 }
 .archive h1{
     text-transform: uppercase;
@@ -16,7 +22,6 @@
     padding-left: 0;
     margin: 0 auto;
 }
-
 .taxonomy-description {
     width: 100%;
     text-align: center;
@@ -32,7 +37,6 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
-   
     ul{
         margin-bottom: 2.5rem;
     }
@@ -50,12 +54,7 @@
             }
         }
     }
-
-
 } 
-
-
-
 .archive .allproducts{
        border-top:1px dashed #c8c8c8;
        padding-top:3rem;

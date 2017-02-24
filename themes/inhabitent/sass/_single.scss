@@ -1,44 +1,48 @@
 .single-post .main-navigation{
     border-bottom: 1px solid #e1e1e1;
+    background-color: $color__background-body;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
 }
-
 .single-post .site-content{
     display: flex;
     width: 1120px;
     margin: 0 auto;
+    padding-top: 3rem;
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
         border-right: 1px solid #e1e1e1;
     }
-      button{
-            background-color: white;
-            border: 1px solid black;
-             a{
-            text-decoration: none;
-            color: black;
-            }
-            i{
-            padding-right: 0.5rem;
-            }
+    button{
+        background-color: $color__background-body;
+        border: 1px solid black;
+         a{
+        text-decoration: none;
+        color: black;
         }
-        button:hover{
-            background: #248a83;  
-            color: white;
+        i{
+        padding-right: 0.5rem;
         }
+    }
+    button:hover{
+        background: #248a83;  
+        color: white;
+    }
     .entry-header{
         position: relative;
         line-height: 0;
         color: #fff;
         text-transform: uppercase;
-            img{
-                width: 100%;
-            }
+        img{
+            width: 100%;
+        }
         .entry-title{
             position: absolute;
             left: 0;
             top: 0;
-            background-color: #248a83;
+            background-color: $color__link;
             padding: 0.7rem 1.8rem;
             font-size: 2rem;
             width: 36rem;
@@ -53,10 +57,10 @@
             }
         }
         .entry-meta{
-            font-family: novecento,sans-serif;
+            font-family: $font__headings, sans-serif;
             letter-spacing: 0.03rem;
             position: absolute;
-            background-color: #248a83;
+            background-color: $color__link;
             padding: 1rem 1rem;
             bottom: 0;
             right: 0;
@@ -67,7 +71,7 @@
         }
     }
     .entry-footer {
-        font-family: novecento,sans-serif;
+        font-family: $font__headings, sans-serif;
         text-transform: uppercase;
         .cat-links{
             margin-right: 1.5rem;
@@ -108,7 +112,7 @@
     #comments ol{
         padding-left: 0;
         margin-left: 0;
-         article{
+        article{
             display: flex;
             border-bottom: 1px solid #e1e1e1;
             margin: 1rem 0;

@@ -13,7 +13,6 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
 			<!--<button type="button" id="close-comments">Close Comments</button>-->
 				<button><a href="http://www.facebook.com"><i class="fa fa-facebook"></i>Like</a></button>
 				<button><a href="http://www.twitter.com"><i class="fa fa-twitter"></i>Tweet</a></button>
@@ -24,7 +23,6 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

@@ -92,7 +92,7 @@ function red_starter_scripts() {
 	
 	// Enqueue jQuery for api for hide comment button
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'red_comments', get_template_directory_uri(). '/js/api.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'red_comments', get_template_directory_uri(). '/js/main.js', array( 'jquery' ), false, true );
 	//localize the script
 	wp_localize_script( 'red_comments', 'red_vars', array(
       'rest_url' => rest_url(  ),

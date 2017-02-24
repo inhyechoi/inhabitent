@@ -2,10 +2,13 @@
 	background: transparent;
 	height: 0px;
 	li a{
-		color: white;
+		color: $color__background-body;
 	}
 	.fa{
-		color: white;
+		color: $color__background-body;
+	}
+	i:hover{
+		color:#f0e4d1;
 	}
 }
 .page-template-about .entry-header {
@@ -20,13 +23,11 @@
 			width: 100%;
 			text-align: center;
 			align-self: center;
-			color: white;
+			color: $color__background-body;
 			text-transform: uppercase;
 			font-size: 3rem;
 		}
-	
 }
-
 .page-template-about .container{
 	margin-left: auto;
     margin-right: auto;

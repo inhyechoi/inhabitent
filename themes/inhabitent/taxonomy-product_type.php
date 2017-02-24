@@ -16,8 +16,6 @@ get_header(); ?>
 				<?php $term = get_queried_object(); ?>
 					<h1><?php echo $term -> name; ?> </h1>
 						<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );?>
-
-
 			</header>
 			
 			<ul class="shop-flexbox">
@@ -25,8 +23,7 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<li class="shop-product">
-
-						
+	
 						<div class="archive-product">
 							<a href="<?php the_permalink();?>" ><?php the_post_thumbnail('large'); ?>
 							</a>
@@ -45,8 +42,7 @@ get_header(); ?>
 			
 			<?php endif; ?>
 				</section>
-			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
