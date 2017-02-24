@@ -26,7 +26,7 @@ get_header(); ?>
 
           <p> <?php echo $term->description; ?> </p>
          
-          <button><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> Stuff</a></button>
+          <button><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> Stuff </a></button>
       </div>
                         
     <?php endforeach; ?>
@@ -63,9 +63,39 @@ get_header(); ?>
 
     
 </div>
-
 <div class="adventures container">
     <h2>latest adventures</h2>
 </div>
 
+  <section class="story-wrapper">  
+
+
+  <div class="adventure-canoe">
+          <p>Getting Back to Nature in a Canoe</p>     
+      <div>
+          <a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+      </div>
+  </div>
+  <div class="adventure-beach">
+          <p>A Night with Friends at the Beach</p>     
+      <div>
+          <a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+      </div>
+  </div>
+
+  <div class="adventure-sky">
+          <p>Star-Gazing at the Night Sky</p>     
+      <div>
+          <a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+      </div>
+  </div>
+    <div class="adventure-mountain">
+          <p>Taking in the View at Big Mountain</p>     
+      <div>
+          <a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+      </div>
+
+      <button>more adventures</button>
+</section>
+        
 <?php get_footer(); ?>

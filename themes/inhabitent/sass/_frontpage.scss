@@ -1,3 +1,13 @@
+.home .main-navigation{
+	li a{
+		color: white;
+	}
+	.fa{
+		color: white;
+	}
+}
+
+
 .hero-banner{
 	height: 800px;
 	background:
@@ -56,18 +66,19 @@
         width:100%
     }
     .single-thumbnail{
-        margin: 0 1rem;
-        width:  340px;
+        margin: 0 auto;
+        width: 360px;
         text-align: left;
         line-height: 1;
-        border: 1px solid lightgrey;
+        border: 1px solid #d3d3d3;
         padding-bottom: 0.6rem;
         .text-area{
             padding: 1rem 0.5rem;
-            height: 140px;
+            height: 150px;
         }
         img{
             height: 240px;
+            border-bottom: 4px solid #d3d3d3;
         }
         .entry-meta{
             font-size: 0.8rem;
@@ -78,6 +89,9 @@
             letter-spacing: 0.1rem;
             color: #248a83;
             margin-bottom: 2rem;
+        }
+        h3:hover{
+            color: black;
         }
         .read-entry{
             font-family: novecento,sans-serif;
@@ -93,4 +107,83 @@
         }
     }
 }
+
+.home .story-wrapper{
+    width: 1120px;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+    height: 600px;
+    position: relative;
+    a{
+        font-family: novecento,sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 0.5rem 1.2rem;
+
+    }
+    button{
+        position: absolute;
+        bottom: 40px;
+        left: 0px;
+    }
+}
+.home .adventure-canoe{
+    width: 50%;
+    height: 500px;
+    background: url("../../images/adventure-photos/canoe-girl.jpg");
+    background-size:cover;
+    float: left;
+    p{
+        font-size: 3rem;
+    }
+}
+.home .adventure-beach{
+    width: 50%;
+    height: 250px;
+    background: url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-size:cover;
+    float: right;
+    p{
+        font-size: 2.5rem;
+    }
+}
+.home .adventure-mountain{
+    width: 25%;
+    height: 250px;
+    background: url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-size:cover;
+    float: right;
+    p{
+        font-size: 1.5rem;
+    }
+}
+.home .adventure-sky{
+    width: 25%;
+    height: 250px;
+    background: url("../../images/adventure-photos/night-sky.jpg");
+    background-size:cover;
+    float: right;
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.home .search-box{
+    height: 50px;
+    position: relative;
+    i{
+        margin: 16px auto;
+        width: 50px;
+        position: absolute;
+    }
+    input{
+        margin: 10px auto;
+        width: 150px;
+        height: 30px;
+    }
+}
+
 

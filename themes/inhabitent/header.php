@@ -45,7 +45,15 @@
 						array( 'theme_location' => 'primary', 
 								'menu_id' => 'primary-menu' ) ); 
 					?>
-					<i class="fa fa-search"></i>
+				<div class="search-box">
+					<a href="search">
+						<i class="fa fa-search"></i> 
+						<!--<input type="text" />-->
+					</a>
+				</div>
+
+
+					
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 		<div id="content" class="site-content">

@@ -1,9 +1,5 @@
 .archive .main-navigation{
     border-bottom:1px solid #e1e1e1;
-    background-color: white;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
 }
 .archive h1{
     text-transform: uppercase;
@@ -26,7 +22,7 @@
     flex-wrap: wrap;
     width: 1120px;
     margin: 0 auto;
-    padding-top: 2.5rem;
+
     h1{
         width:100%;
         margin-bottom: 0;

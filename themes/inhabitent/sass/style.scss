@@ -58,7 +58,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "typography";
 @import "elements";
 @import "forms";
-@import "page-templates";
 @import "modules";
 
 
@@ -66,16 +65,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "about";
 @import "findus";
 
-// @import "pagenotfound";
+
 @import "content";
 @import "media";
 
+@import "category";
+@import "tag";
 @import "footer";
 @import "journal";
 @import "single";
 @import "single-products";
-@import "archive";
+@import "taxonomy-product_type";
 @import "archive-products";
+
 
 @import "widgets";
 @import "navigation";
+@import "errorpage";

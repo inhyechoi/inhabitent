@@ -1,5 +1,9 @@
 .page-template-find-us .main-navigation{
     border-bottom: 1px solid #e1e1e1;
+    background-color: white;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
 }
 
 .page-template-find-us #content{
@@ -30,9 +34,13 @@
                 font-size: 2rem;
                 letter-spacing: 0.1rem;
             }
+        
+            textarea{
+                background-color:#f2f2f2;
+            }
         }
     #secondary{
-        padding: 3rem 0 0 5%;
+        padding: 6rem 0 0 5%;
         width: 28%;
         h2{
             letter-spacing: 0.1rem;

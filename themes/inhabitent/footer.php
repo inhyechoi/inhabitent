@@ -12,13 +12,13 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="contactInfo">
 				<h3> Contact Info</h3>
-					<a href="email">
+					<div class="email">
 						<i class="fa fa-envelope" aria-hidden="true"></i> 
-						<a href="info@inhabitent.com">info@inhabitent.com</a>
-					</a>
+						<a class="email-address" href="info@inhabitent.com">info@inhabitent.com</a>
+					</div>
 					<p>
 						<i class="fa fa-phone" aria-hidden="true"></i>
-						<a href="tel:778-456-7891">778-456-7891</a>
+						<a class="phone-number" href="tel:778-456-7891">778-456-7891</a>
 					</p>
 					<p>
 						<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>

@@ -37,7 +37,7 @@ get_header(); ?>
     ?>  
 
          <li>
-         <a href ='<?php echo $url ?>' class='button'><h2><?php echo $term->name;?></h2></a>
+         <a href ='<?php echo $url ?>' class='button'><h2><?php echo $term->slug;?></h2></a>
 		  </li>
      
                         
