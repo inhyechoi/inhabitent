@@ -9,12 +9,17 @@
 		color:#f0e4d1;
 	}
 }
+
+.home .header-logo{
+	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+    background-size: contain;
+}
 .hero-banner{
 	height: 800px;
 	background:
-     url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,  
-     linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), 
-     url("../../images/home-hero.jpg") no-repeat center top;
+    url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,  
+    linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), 
+    url("../../images/home-hero.jpg") no-repeat center top;
 	background-size:auto,  auto ,cover;
 }
 .home .site-content{

@@ -6,8 +6,12 @@
 
     $('.fa-search').on('click', function(event){
     event.preventDefault();
-    $('.search-field').css('width','170px');
-    
-});
+    $('.search-field').toggleClass('searchAppear');
+    $('.search-field').focus();    
+    });
+
+    $( '.search-field' ).blur(function() {
+    $( '.fa-search' ).click();
+    });
 
 })(jQuery);

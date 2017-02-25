@@ -30,11 +30,6 @@ a {
 	display: none;
 }
 
-.site-header .reverse-header h1 {
-    background: url("../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
-    background-size: 50px 33px;
-}	
-
 /* Menus */
 .main-navigation {
 	clear: both;
@@ -49,29 +44,33 @@ a {
 	.search-box a{
 		width:50px;
 	}		
+	.search-field{
+		transition: all 1s;
+	}
 	fieldset{
 		border: 0;
-		.search-field{
+		input{
 			width: 0;
 			border: 0;
 			padding: 0;
-		}
-		input{
 			font-family: $font__headings;
 			font-size: 0.8rem;
-		}
-		input:focus{
-			outline:none;
+			background-color: transparent;
+			&:focus{
+				outline:none;
+			}
 		}
 		button{
 			background-color:transparent;
 			padding:0;
+			&:focus{
+				outline:none;
+			}
+		}
+		.searchAppear{
+			width: 170px;
 		}
 	}
-	button:focus{
-		outline:none;
-	}
-	
 	.container{
 		height: 50px;
 		display: flex;
@@ -93,7 +92,7 @@ a {
 		height: 33px;
 	}
 	.fa{
-		color: #248a83;
+		color: $color__link;
 	}
 	ul {
 		display: none;
