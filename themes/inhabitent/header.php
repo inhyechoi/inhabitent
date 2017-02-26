@@ -29,10 +29,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="container">
 						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>">
-							<h1 class="header-logo" style="background: 
-								url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg) 
-								no-repeat; background-size: contain">Inhabitents Logo
-							</h1>
+							<h1 class="header-logo">Inhabitents Logo</h1>
 						</a>
 
 				<button class="menu-toggle" 

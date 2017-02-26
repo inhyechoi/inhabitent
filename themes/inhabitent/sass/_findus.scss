@@ -1,5 +1,5 @@
 .page-template-find-us .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: $base__border;
     background-color: $color__background-body;
     opacity: 0.9;
     position: fixed;
@@ -18,9 +18,9 @@
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
+        border-right: $base__border;
         article{
-        margin-bottom: 8rem;
+            margin-bottom: 8rem;
         }
         .entry-header{
             line-height: 0;

@@ -1,5 +1,5 @@
 .archive .main-navigation{
-    border-bottom:1px solid #e1e1e1;
+    border-bottom: $base__border;
 }
 .archive h1{
     text-transform: uppercase;
@@ -54,10 +54,10 @@
        margin: 0 auto;
        width: 1120px;
        li{
-           border: 1px solid #e1e1e1;
+           border: $base__border;
            flex: 0 1 23%;
            max-width: 23%;
-           margin-bottom: 1.5rem;
+           margin-bottom: $base__space-unit;
            list-style:none;
            text-align: center;
            .archive-product{

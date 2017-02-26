@@ -1,5 +1,5 @@
 .blog .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: $base__border;
     background-color: $color__background-body;
     opacity: 0.9;
     position: fixed;
@@ -19,15 +19,15 @@
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
+        border-right: $base__border;
     }
         .readmore{
             margin-bottom: 4.5rem;
         }
         .read-more {
             text-decoration:none;
-            padding:0.8rem 1.5rem;
-            border: 1px solid black;
+            padding:0.8rem $base__space-unit;
+            border: $second__border;
             text-transform: uppercase;
             font-family: $font__headings, sans-serif;
             color: black;

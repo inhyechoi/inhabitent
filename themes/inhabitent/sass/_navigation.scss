@@ -42,7 +42,7 @@ a {
 		color:#f0e4d1;
 	}
 	.search-box a{
-		width:50px;
+		width: 50px;
 	}		
 	.search-field{
 		transition: all 1s;
@@ -80,7 +80,10 @@ a {
 		max-width: 1120px;
 		position:relative;
 	}
+
 	.header-logo{
+		background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+    	background-size: contain;
 		position: absolute;
 		left: 0;
 		top: 8px;

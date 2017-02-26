@@ -1,7 +1,16 @@
 .error404 .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: $base__border;
+    background-color: $color__background-body;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+    #primary-menu a:hover{
+		color:#2f1339;
+	}
+    i:hover{
+		color:#2f1339;
+	}
 }
-
 .error404 .site-content{
     letter-spacing: 0.05rem;
     display: flex;
@@ -11,23 +20,21 @@
     #primary{
         width:75%;
         padding:0 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
-        .page-header{
-            h1{
+        border-right: $base__border;
+        .page-header h1{
             text-transform: uppercase;
             font-size: 2.5rem;
-            }  
-        }
-    }
-    input{
-       background-color: #f2f2f2;
+        }  
     }
     fieldset{
         border:none;
         padding: 0;
-    }
-    button{
-        display: none;
+        button{
+            display: none;
+            input{
+                 background-color: #f2f2f2;
+             }
+         }
     }
     .widget{
         h2{
@@ -37,7 +44,7 @@
             margin-left: 0;
             padding-left: 0;
             li{
-            list-style: none;
+                list-style: none;
                 a{
                     text-decoration: none;
                 }

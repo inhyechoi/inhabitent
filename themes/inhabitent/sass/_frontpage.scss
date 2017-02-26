@@ -8,18 +8,17 @@
     i:hover{
 		color:#f0e4d1;
 	}
-}
-
-.home .header-logo{
+    .header-logo{
 	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
     background-size: contain;
+    }
 }
 .hero-banner{
 	height: 800px;
 	background:
-    url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,  
-    linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), 
-    url("../../images/home-hero.jpg") no-repeat center top;
+        url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,  
+        linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), 
+        url("../../images/home-hero.jpg") no-repeat center top;
 	background-size:auto,  auto ,cover;
 }
 .home .site-content{
@@ -39,7 +38,7 @@
             width:100%;
         }
         .shop-stuff-item{
-            border: 1px solid #e1e1e1;
+            border: $base__border;
             border-top-width: 5px;
             flex: 0 1 23.5%;
             max-width: 23.5%;
@@ -104,7 +103,7 @@
             text-transform: uppercase;
             text-decoration:none;
             color: black;
-            border: 1px solid black;
+            border: $second__border;
             padding: 0.7rem 1rem;
         }
         .read-entry:hover{
@@ -161,7 +160,7 @@
     background-size:cover;
     float: right;
     p{
-        font-size: 1.5rem;
+        font-size: $base__space-unit;
     }
 }
 .home .adventure-sky{
@@ -171,7 +170,7 @@
     background-size:cover;
     float: right;
     p{
-        font-size: 1.5rem;
+        font-size: $base__space-unit;
     }
 }
 .home .search-box{

@@ -1,11 +1,4 @@
 //styling for each category page
-.category .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
-    background-color: $color__background-body;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
-}
 .category .site-content{
     display: flex;
     width: 1120px;
@@ -14,29 +7,13 @@
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
-    }
-        .read-more {
-            margin-bottom: 4.5rem;
-            text-decoration:none;
-            padding:0.8rem 1.5rem;
-            border: 1px solid black;
-            text-transform: uppercase;
-            font-family: $font__headings,sans-serif;
-            color: black;
-            font-size: 0.9rem;
-        }
-        .read-more:hover{
-            background: #248a83;  
-            color: $color__background-body;
-        }
-
+        border-right: $base__border;
         .page-header{
             width:100%;
             padding-top: 0;
             padding-bottom: 1rem;
             margin-bottom: 2.5rem;
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: $base__border;
             h1{
                 text-align: left;
                 margin: 0;
@@ -45,33 +22,32 @@
             }
         }
         .entry-header{
-        position: relative;
-        line-height: 0;
-        color: $color__background-body;
-        text-transform: uppercase;
+            position: relative;
+            line-height: 0;
+            color: $color__background-body;
+            font-family: $font__headings,sans-serif;
+            text-transform: uppercase;
             img{
                 width: 100%;
             }
             .entry-title{
                 position: absolute;
-                left: 0;
                 top: 0;
                 background-color: $color__link;
                 padding: 0.7rem 1.8rem;
                 font-size: 2rem;
                 width: 36rem;
                 line-height: 1.3;
-                    a{
-                        font-size: 2.3rem;
-                        text-decoration: none;
-                        color: $color__background-body;
+                a{
+                    font-size: 2.3rem;
+                    text-decoration: none;
+                    color: $color__background-body;
+                    &:hover{
+                    color: #ffe5d1;
                     }
-                    a:hover{
-                        color: #ffe5d1;
-                    }
+                }
             }
             .entry-meta{
-                font-family: $font__headings,sans-serif;
                 letter-spacing: 0.03rem;
                 position: absolute;
                 background-color: $color__link;
@@ -83,6 +59,20 @@
                 }
             }
         }
+        .read-more {
+            text-decoration:none;
+            padding:0.8rem $base__space-unit;
+            border: $second__border;
+            text-transform: uppercase;
+            font-family: $font__headings,sans-serif;
+            color: black;
+            font-size: 0.9rem;
+            &:hover{
+            background: #248a83;  
+            color: $color__background-body;
+            }  
+        }
+    }
     #secondary{
         padding: 3rem 0 0 5%;
         width: 28%;
@@ -101,12 +91,9 @@
             }  
             a{
                 text-decoration: none;
-            }
-            a:hover{
+                &:hover{
                 color: $color__link-hover;
-            }
-            .bolden{
-                font-weight: bold;
+                }
             }
         }
         #archives-2 ul{
@@ -120,13 +107,6 @@
     }
 }
 //styling for each tag page
-.tag .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
-    background-color: $color__background-body;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
-}
 .tag .site-content{
     display: flex;
     width: 1120px;
@@ -135,30 +115,13 @@
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
-    }
-        .readmore{
-            margin-bottom: 4.5rem;
-        }
-        .read-more {
-            text-decoration:none;
-            padding:0.8rem 1.5rem;
-            border: 1px solid black;
-            text-transform: uppercase;
-            font-family: $font__headings,sans-serif;
-            color: black;
-            font-size: 0.9rem;
-        }
-        .read-more:hover{
-            background: #248a83;  
-            color: $color__background-body;
-        }
+        border-right: $base__border;
         .page-header{
             width:100%;
             padding-top: 0;
             padding-bottom: 1rem;
             margin-bottom: 2.5rem;
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: $base__border;
             h1{
                 text-align: left;
                 margin: 0;
@@ -167,16 +130,16 @@
             }
         }
         .entry-header{
-        position: relative;
-        line-height: 0;
-        color: $color__background-body;
-        text-transform: uppercase;
+            position: relative;
+            line-height: 0;
+            color: $color__background-body;
+            font-family: $font__headings,sans-serif;
+            text-transform: uppercase;
             img{
                 width: 100%;
             }
             .entry-title{
                 position: absolute;
-                left: 0;
                 top: 0;
                 background-color: $color__link;
                 padding: 0.7rem 1.8rem;
@@ -187,13 +150,12 @@
                     font-size: 2.3rem;
                     text-decoration: none;
                     color: $color__background-body;
-                }
-                a:hover{
+                    &:hover{
                     color: #ffe5d1;
+                    }
                 }
             }
             .entry-meta{
-                font-family: $font__headings,sans-serif;
                 letter-spacing: 0.03rem;
                 position: absolute;
                 background-color: $color__link;
@@ -205,6 +167,20 @@
                 }
             }
         }
+        .read-more {
+            text-decoration:none;
+            padding:0.8rem $base__space-unit;
+            border: $second__border;
+            text-transform: uppercase;
+            font-family: $font__headings,sans-serif;
+            color: black;
+            font-size: 0.9rem;
+            &:hover{
+            background: #248a83;  
+            color: $color__background-body;
+            }  
+        }
+    }
     #secondary{
         padding: 3rem 0 0 5%;
         width: 28%;
@@ -223,12 +199,9 @@
             }  
             a{
                 text-decoration: none;
-            }
-            a:hover{
+                &:hover{
                 color: $color__link-hover;
-            }
-            .bolden{
-                font-weight: bold;
+                }
             }
         }
         #archives-2 ul{
@@ -244,13 +217,6 @@
 
 //styling for archive pages
 
-.date .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
-    background-color: $color__background-body;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
-}
 .date .site-content{
     display: flex;
     width: 1120px;
@@ -259,30 +225,13 @@
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
-    }
-        .readmore{
-            margin-bottom: 4.5rem;
-        }
-        .read-more {
-            text-decoration:none;
-            padding:0.8rem 1.5rem;
-            border: 1px solid black;
-            text-transform: uppercase;
-            font-family: $font__headings,sans-serif;
-            color: black;
-            font-size: 0.9rem;
-        }
-        .read-more:hover{
-            background: #248a83;  
-            color: $color__background-body;
-        }
+        border-right: $base__border;
         .page-header{
             width:100%;
             padding-top: 0;
             padding-bottom: 1rem;
             margin-bottom: 2.5rem;
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: $base__border;
             h1{
                 text-align: left;
                 margin: 0;
@@ -291,16 +240,16 @@
             }
         }
         .entry-header{
-        position: relative;
-        line-height: 0;
-        color: $color__background-body;
-        text-transform: uppercase;
+            position: relative;
+            line-height: 0;
+            color: $color__background-body;
+            font-family: $font__headings,sans-serif;
+            text-transform: uppercase;
             img{
                 width: 100%;
             }
             .entry-title{
                 position: absolute;
-                left: 0;
                 top: 0;
                 background-color: $color__link;
                 padding: 0.7rem 1.8rem;
@@ -311,13 +260,12 @@
                     font-size: 2.3rem;
                     text-decoration: none;
                     color: $color__background-body;
-                }
-                a:hover{
+                    &:hover{
                     color: #ffe5d1;
+                    }
                 }
             }
             .entry-meta{
-                font-family: $font__headings,sans-serif;
                 letter-spacing: 0.03rem;
                 position: absolute;
                 background-color: $color__link;
@@ -329,6 +277,20 @@
                 }
             }
         }
+        .read-more {
+            text-decoration:none;
+            padding:0.8rem $base__space-unit;
+            border: $second__border;
+            text-transform: uppercase;
+            font-family: $font__headings,sans-serif;
+            color: black;
+            font-size: 0.9rem;
+            &:hover{
+            background: #248a83;  
+            color: $color__background-body;
+            }  
+        }
+    }
     #secondary{
         padding: 3rem 0 0 5%;
         width: 28%;
@@ -347,12 +309,9 @@
             }  
             a{
                 text-decoration: none;
-            }
-            a:hover{
+                &:hover{
                 color: $color__link-hover;
-            }
-            .bolden{
-                font-weight: bold;
+                }
             }
         }
         #archives-2 ul{

@@ -1,5 +1,5 @@
 .single-post .main-navigation{
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: $base__border;
     background-color: $color__background-body;
     opacity: 0.9;
     position: fixed;
@@ -13,23 +13,24 @@
     #primary{
         width:75%;
         padding: 5% 5% 0 0 ;
-        border-right: 1px solid #e1e1e1;
+        border-right: $base__border;
     }
     button{
         background-color: $color__background-body;
-        border: 1px solid black;
-         a{
-        text-decoration: none;
-        color: black;
+        border: $second__border;
+        a{
+            text-decoration: none;
+            color: black;
         }
         i{
-        padding-right: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        &:hover{
+            background: #248a83;  
+            color: white;
         }
     }
-    button:hover{
-        background: #248a83;  
-        color: white;
-    }
+ 
     .entry-header{
         position: relative;
         line-height: 0;
@@ -129,14 +130,14 @@
         margin-left: 0;
         article{
             display: flex;
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: $base__border;
             margin: 1rem 0;
             padding-bottom: 1rem;
             img{
                 border-radius: 40px;
             }
             .comment-content{
-            padding-left: 2rem;
+                padding-left: 2rem;
                 cite{
                     font-weight: bold;
                     font-style: normal;
@@ -164,9 +165,9 @@
             width: 100%;
         }
         h3{
-        width: 100%;
-        font-size: 2rem;
-        text-transform: uppercase;
+            width: 100%;
+            font-size: 2rem;
+            text-transform: uppercase;
             .comment-form-comment textarea{
                 width: 100%;
             }
