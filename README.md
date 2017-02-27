@@ -1,5 +1,9 @@
 # inhabitent
+
 Creating the custom Wordpress theme
+!(images/screenshot/screenshot.png)
+
+
 
 # Technologies
 * Wordpress
