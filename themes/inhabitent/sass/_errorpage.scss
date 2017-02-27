@@ -5,16 +5,16 @@
     position: fixed;
     z-index: 1;
     #primary-menu a:hover{
-		color:#2f1339;
+		color:$color__link-hover;
 	}
     i:hover{
-		color:#2f1339;
+		color:$color__link-hover;
 	}
 }
 .error404 .site-content{
     letter-spacing: 0.05rem;
     display: flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     padding-bottom: 3rem;
     #primary{

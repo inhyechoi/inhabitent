@@ -1,7 +1,7 @@
 //styling for each category page
 .category .site-content{
     display: flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     padding-top: 2.5rem;
     #primary{
@@ -65,7 +65,7 @@
             border: $second__border;
             text-transform: uppercase;
             font-family: $font__headings,sans-serif;
-            color: black;
+            color: $color__text-main;
             font-size: 0.9rem;
             &:hover{
             background: #248a83;  
@@ -109,7 +109,7 @@
 //styling for each tag page
 .tag .site-content{
     display: flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     padding-top: 2.5rem;
     #primary{
@@ -173,7 +173,7 @@
             border: $second__border;
             text-transform: uppercase;
             font-family: $font__headings,sans-serif;
-            color: black;
+            color: $color__text-main;
             font-size: 0.9rem;
             &:hover{
             background: #248a83;  
@@ -219,7 +219,7 @@
 
 .date .site-content{
     display: flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     padding-top: 2.5rem;
     #primary{
@@ -283,10 +283,10 @@
             border: $second__border;
             text-transform: uppercase;
             font-family: $font__headings,sans-serif;
-            color: black;
+            color: $color__text-main;
             font-size: 0.9rem;
             &:hover{
-            background: #248a83;  
+            background: $color__link; 
             color: $color__background-body;
             }  
         }

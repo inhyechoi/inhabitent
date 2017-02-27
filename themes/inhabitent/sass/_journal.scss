@@ -5,15 +5,15 @@
     position: fixed;
     z-index: 1;
     #primary-menu a:hover{
-		color:#2f1339;
+		color:$color__link-hover;
 	}
     i:hover{
-		color:#2f1339;
+		color:$color__link-hover;
 	}
 }
 .blog .site-content{
     display: flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     padding-top: 2.5rem;
     #primary{
@@ -30,7 +30,7 @@
             border: $second__border;
             text-transform: uppercase;
             font-family: $font__headings, sans-serif;
-            color: black;
+            color: $color__text-main;
             font-size: 0.9rem;
         }
         .read-more:hover{
@@ -60,7 +60,7 @@
                     color: $color__background-body;
                 }
                 a:hover{
-                    color: #f0e4d1;
+                    color: $color__link-hover2;
                 }
             }
             .entry-meta{

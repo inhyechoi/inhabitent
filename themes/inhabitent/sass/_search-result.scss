@@ -7,7 +7,7 @@
 }
 .search .site-content{
     display: flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     padding-top: 2.5rem;
     article{
@@ -57,7 +57,7 @@
             border: $second__border;
             text-transform: uppercase;
             font-family: $font__headings, sans-serif;
-            color: black;
+            color: $color__text-main;
             font-size: 0.9rem;
             &:hover{
                 background: $color__link; 

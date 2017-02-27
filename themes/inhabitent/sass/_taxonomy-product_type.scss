@@ -19,7 +19,7 @@
 .archive .page-header{
     display:flex;
     flex-wrap: wrap;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto;
     h1{
         width:100%;
@@ -46,13 +46,13 @@
 } 
 
 .archive .allproducts{
-       border-top:1px dashed #c8c8c8;
+       border-top: $dashed__border;
        padding-top:3rem;
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
        margin: 0 auto;
-       width: 1120px;
+       width: $base__website-width;
        li{
            border: $base__border;
            flex: 0 1 23%;

@@ -587,12 +587,12 @@ textarea {
       color: #248a83;
       margin-bottom: 2rem; }
     .home .latest-blogpost .single-thumbnail h3:hover {
-      color: black; }
+      color: #404040; }
     .home .latest-blogpost .single-thumbnail .read-entry {
       font-family: novecento, sans-serif, sans-serif;
       text-transform: uppercase;
       text-decoration: none;
-      color: black;
+      color: #404040;
       border: 1px solid #000;
       padding: 0.7rem 1rem; }
     .home .latest-blogpost .single-thumbnail .read-entry:hover {
@@ -605,7 +605,9 @@ textarea {
   color: #fff;
   text-align: left;
   height: 600px;
-  position: relative; }
+  position: relative;
+  line-height: 1.3;
+  letter-spacing: 0.1rem; }
   .home .story-wrapper a {
     font-family: novecento, sans-serif, sans-serif;
     text-transform: uppercase;
@@ -617,42 +619,56 @@ textarea {
     position: absolute;
     bottom: 40px;
     left: 0px; }
+  .home .story-wrapper .read-entry {
+    margin-left: 2rem; }
+    .home .story-wrapper .read-entry:hover {
+      background-color: #248a83;
+      border: none; }
+  .home .story-wrapper p:hover {
+    color: #f0e4d1; }
 
 .home .adventure-canoe {
-  width: 50%;
+  width: 48%;
   height: 500px;
-  background: url("../../images/adventure-photos/canoe-girl.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/canoe-girl.jpg");
   background-size: cover;
   float: left; }
   .home .adventure-canoe p {
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin: 2rem; }
 
 .home .adventure-beach {
   width: 50%;
-  height: 250px;
-  background: url("../../images/adventure-photos/beach-bonfire.jpg");
+  height: 229px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/beach-bonfire.jpg");
   background-size: cover;
   float: right; }
   .home .adventure-beach p {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin: 2rem; }
 
 .home .adventure-mountain {
-  width: 25%;
+  width: 24%;
+  margin-top: 2%;
+  margin-right: 2%;
   height: 250px;
-  background: url("../../images/adventure-photos/mountain-hikers.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/mountain-hikers.jpg");
   background-size: cover;
   float: right; }
   .home .adventure-mountain p {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin: 2rem; }
 
 .home .adventure-sky {
   width: 25%;
+  margin-top: 2%;
   height: 250px;
-  background: url("../../images/adventure-photos/night-sky.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/adventure-photos/night-sky.jpg");
   background-size: cover;
   float: right; }
   .home .adventure-sky p {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin: 2rem; }
 
 .home .search-box {
   height: 50px;
@@ -739,7 +755,7 @@ textarea {
         font-size: 2.5rem;
         width: 36rem;
         line-height: 1.3;
-        color: black; }
+        color: #404040; }
     .page-template-find-us #content #primary .entry-content h2 {
       font-size: 2rem;
       letter-spacing: 0.1rem; }
@@ -958,7 +974,7 @@ object {
     border: 1px solid #000;
     text-transform: uppercase;
     font-family: novecento, sans-serif, sans-serif;
-    color: black;
+    color: #404040;
     font-size: 0.9rem; }
   .blog .site-content .read-more:hover {
     background: #248a83;
@@ -1073,7 +1089,7 @@ object {
     border: 1px solid #000;
     text-transform: uppercase;
     font-family: novecento, sans-serif, sans-serif;
-    color: black;
+    color: #404040;
     font-size: 0.9rem; }
     .search .site-content .read-more:hover {
       background: #248a83;
@@ -1126,12 +1142,12 @@ object {
     border: 1px solid #000; }
     .single-post .site-content button a {
       text-decoration: none;
-      color: black; }
+      color: #404040; }
     .single-post .site-content button i {
       padding-right: 0.5rem; }
     .single-post .site-content button:hover {
       background: #248a83;
-      color: white; }
+      color: #fff; }
   .single-post .site-content .entry-header {
     position: relative;
     line-height: 0;
@@ -1164,7 +1180,7 @@ object {
       bottom: 0;
       right: 0; }
       .single-post .site-content .entry-header .entry-meta .comments-link a {
-        color: white;
+        color: #fff;
         text-decoration: none; }
   .single-post .site-content .entry-footer {
     font-family: novecento, sans-serif, sans-serif;
@@ -1272,10 +1288,10 @@ object {
       text-transform: uppercase; }
     .single-products .shop-item .item-text button {
       background-color: #fff;
-      border: 1px solid black; }
+      border: 1px solid #404040; }
       .single-products .shop-item .item-text button a {
         text-decoration: none;
-        color: black; }
+        color: #404040; }
       .single-products .shop-item .item-text button i {
         padding-right: 0.5rem; }
       .single-products .shop-item .item-text button:hover {
@@ -1514,7 +1530,7 @@ object {
       border: 1px solid #000;
       text-transform: uppercase;
       font-family: novecento, sans-serif, sans-serif;
-      color: black;
+      color: #404040;
       font-size: 0.9rem; }
       .category .site-content #primary .read-more:hover {
         background: #248a83;
@@ -1601,7 +1617,7 @@ object {
       border: 1px solid #000;
       text-transform: uppercase;
       font-family: novecento, sans-serif, sans-serif;
-      color: black;
+      color: #404040;
       font-size: 0.9rem; }
       .tag .site-content #primary .read-more:hover {
         background: #248a83;
@@ -1688,7 +1704,7 @@ object {
       border: 1px solid #000;
       text-transform: uppercase;
       font-family: novecento, sans-serif, sans-serif;
-      color: black;
+      color: #404040;
       font-size: 0.9rem; }
       .date .site-content #primary .read-more:hover {
         background: #248a83;

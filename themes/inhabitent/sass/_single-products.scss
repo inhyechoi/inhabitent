@@ -1,15 +1,15 @@
 .single-products .main-navigation{
     border-bottom: $base__border;
     #primary-menu a:hover{
-		color:#2f1339;
+		color:$color__link-hover;
 	}
     i:hover{
-		color:#2f1339;
+		color:$color__link-hover;
 	}
 }
 .single-products .shop-item{  
     display:flex;
-    width: 1120px;
+    width: $base__website-width;
     margin: 0 auto 7rem auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -20,7 +20,7 @@
         flex-basis: 50%;
         padding-left: 2rem;
         h2{
-            color: #d99054;
+            color: $color__text-second;
             font-size: 2.5rem;
             margin-top:0;
             margin-bottom: 0;
@@ -28,10 +28,10 @@
         }
         button{
             background-color: $color__background-body;
-            border: 1px solid black;
+            border: 1px solid $color__text-main;
             a{
                 text-decoration: none;
-                color: black;
+                color: $color__text-main;
             }
             i{
                 padding-right: 0.5rem;
