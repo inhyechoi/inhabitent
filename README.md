@@ -1,7 +1,7 @@
 # inhabitent
 
 Creating the custom Wordpress theme
-![image] (screenshot/screenshot.png)
+![main image] (themes/inhabitent/images/screenshot/screenshot.png)
 
 
 
