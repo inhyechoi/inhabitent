@@ -1,6 +1,3 @@
-
-//search icon section
-
 (function($){
 //do something when the icon button is clicked
     $('.fa-search').on('click', function(event){
@@ -8,15 +5,12 @@
         $('.search-field').toggleClass('searchAppear');
         $('.search-field').focus();    
     });
-
     $( '.search-field' ).blur(function() {
         $( '.fa-search' ).click();
     });
 
     var bannerHeight = $('.hero-banner').height();
-
     $(window).on('scroll', function() {
-
         if($(this).scrollTop() > bannerHeight) {
             $('#site-navigation').addClass('active');
         } else {
@@ -24,6 +18,5 @@
         $('#site-navigation').removeClass('active');
         }
     });
-    
 })(jQuery);
 
