@@ -12,4 +12,18 @@
     $( '.search-field' ).blur(function() {
         $( '.fa-search' ).click();
     });
+
+    var bannerHeight = $('.hero-banner').height();
+
+    $(window).on('scroll', function() {
+
+        if($(this).scrollTop() > bannerHeight) {
+            $('#site-navigation').addClass('active');
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+        $('#site-navigation').removeClass('active');
+        }
+    });
+    
 })(jQuery);
+

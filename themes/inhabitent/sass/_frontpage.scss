@@ -12,6 +12,20 @@
 	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
     background-size: contain;
     }
+    &.active {
+        border-bottom: $base__border;
+        background-color: $color__background-body;
+        opacity: 0.9;
+        position: fixed;
+        z-index: 1;
+        .header-logo{
+            background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+            background-size: contain;
+        }
+        li a{
+            color: $color__link;
+        }
+    }
 }
 .hero-banner{
 	height: 800px;
@@ -150,7 +164,8 @@
 .home .adventure-canoe{
     width: 48%;
     height: 500px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../images/adventure-photos/canoe-girl.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    url("../../images/adventure-photos/canoe-girl.jpg");
     background-size:cover;
     float: left;
     p{
@@ -161,7 +176,8 @@
 .home .adventure-beach{
     width: 50%;
     height: 229px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../../images/adventure-photos/beach-bonfire.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+    url("../../images/adventure-photos/beach-bonfire.jpg");
     background-size:cover;
     float: right;
     p{
@@ -208,5 +224,3 @@
         height: 30px;
     }
 }
-
-

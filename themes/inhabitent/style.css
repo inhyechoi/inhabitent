@@ -514,6 +514,18 @@ textarea {
   background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
   background-size: contain; }
 
+.home .main-navigation.active {
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fff;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1; }
+  .home .main-navigation.active .header-logo {
+    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+    background-size: contain; }
+  .home .main-navigation.active li a {
+    color: #248a83; }
+
 .hero-banner {
   height: 800px;
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/home-hero.jpg") no-repeat center top;
@@ -976,9 +988,9 @@ object {
     font-family: novecento, sans-serif, sans-serif;
     color: #404040;
     font-size: 0.9rem; }
-  .blog .site-content .read-more:hover {
-    background: #248a83;
-    color: #fff; }
+    .blog .site-content .read-more:hover {
+      background: #248a83;
+      color: #fff; }
   .blog .site-content .entry-header {
     position: relative;
     line-height: 0;
