@@ -1,16 +1,7 @@
 .home .main-navigation{
-	li a{
-		color: $color__background-body;
-	}
-	.fa{
-		color: $color__background-body;
-	}
-    i:hover{
-		color:$color__link-hover2;
-	}
+	@include headerColorMain;
     .header-logo{
-	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
-    background-size: contain;
+	    @include logoWhite;
     }
     &.active {
         border-bottom: $base__border;

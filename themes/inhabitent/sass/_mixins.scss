@@ -10,3 +10,127 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin logoWhite{
+	background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+    background-size: contain;
+}
+
+@mixin headerColorMain{
+	.menu a{
+		color: $color__background-body;
+	}
+	.fa-search{
+		color: $color__background-body;
+		&:hover{
+		color:$color__link-hover2;
+		}
+	}
+}
+
+@mixin headerSubMain{
+    background-color: $color__background-body;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+	border-bottom: $base__border;
+    #primary-menu a:hover{
+		color:$color__link-hover;
+	}
+    i:hover{
+		color:$color__link-hover;
+	}
+}
+
+@mixin siteContent{
+	display: flex;
+    width: $base__website-width;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+    #primary{
+        width:75%;
+        padding: 5% 5% 0 0 ;
+        border-right: $base__border;
+	}
+}
+
+@mixin entryHeader{
+	.entry-header{
+    position: relative;
+    line-height: 0;
+    color: $color__background-body;
+    text-transform: uppercase;
+    img{
+        width: 100%;
+    }
+    .entry-title{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $color__link;
+        padding: 0.7rem 1.8rem;
+        font-size: 2rem;
+        width: 36rem;
+        line-height: 1.3;
+        a{
+            font-size: 2.3rem;
+            text-decoration: none;
+            color: $color__background-body;
+        }
+        a:hover{
+            color: $color__link-hover2;
+        }
+    }
+    .entry-meta{
+        font-family: $font__headings, sans-serif;
+        letter-spacing: 0.03rem;
+        position: absolute;
+        background-color: $color__link;
+        padding: 1rem 1rem;
+        bottom: 0;
+        right: 0;
+        a{
+            color:$color__background-body;
+        }
+    }
+}
+}
+
+@mixin secondary{
+	 #secondary{
+        padding: 6rem 0 0 5%;
+        width: 28%;
+        h2{
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+        }
+        .day-of-week{
+            font-weight: bold;
+        }
+        .textwidget{
+            line-height: 2.7;
+            i {
+                margin-right: .5rem;
+                width: 20px;
+            }  
+            a{
+                text-decoration: none;
+                &:hover{
+                color: $color__link-hover;
+                }
+            }
+            .bolden{
+                font-weight: bold;
+            }
+        }
+	}
+}
+
+@mixin archives {
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}

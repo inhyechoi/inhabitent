@@ -1,111 +1,38 @@
 //styling for each category page
 .category .site-content{
-    display: flex;
-    width: $base__website-width;
-    margin: 0 auto;
-    padding-top: 2.5rem;
-    #primary{
-        width:75%;
-        padding: 5% 5% 0 0 ;
-        border-right: $base__border;
-        .page-header{
-            width:100%;
-            padding-top: 0;
-            padding-bottom: 1rem;
-            margin-bottom: 2.5rem;
-            border-bottom: $base__border;
-            h1{
-                text-align: left;
-                margin: 0;
-                padding: 0;
-                font-size: 2.3rem;
-            }
-        }
-        .entry-header{
-            position: relative;
-            line-height: 0;
-            color: $color__background-body;
-            font-family: $font__headings,sans-serif;
-            text-transform: uppercase;
-            img{
-                width: 100%;
-            }
-            .entry-title{
-                position: absolute;
-                top: 0;
-                background-color: $color__link;
-                padding: 0.7rem 1.8rem;
-                font-size: 2rem;
-                width: 36rem;
-                line-height: 1.3;
-                a{
-                    font-size: 2.3rem;
-                    text-decoration: none;
-                    color: $color__background-body;
-                    &:hover{
-                    color: #ffe5d1;
-                    }
-                }
-            }
-            .entry-meta{
-                letter-spacing: 0.03rem;
-                position: absolute;
-                background-color: $color__link;
-                padding: 1rem 1rem;
-                bottom: 0;
-                right: 0;
-                a{
-                    color:$color__background-body;
-                }
-            }
-        }
-        .read-more {
-            text-decoration:none;
-            padding:0.8rem $base__space-unit;
-            border: $second__border;
-            text-transform: uppercase;
-            font-family: $font__headings,sans-serif;
-            color: $color__text-main;
-            font-size: 0.9rem;
-            &:hover{
-            background: #248a83;  
-            color: $color__background-body;
-            }  
+    @include siteContent;
+    .page-header{
+        width:100%;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        margin-bottom: 2.5rem;
+        border-bottom: $base__border;
+        h1{
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            font-size: 2.3rem;
         }
     }
-    #secondary{
-        padding: 3rem 0 0 5%;
-        width: 28%;
-        h2{
-            letter-spacing: 0.1rem;
-            text-transform: uppercase;
-        }
-        .day-of-week{
-            font-weight: bold;
-        }
-        .textwidget{
-            line-height: 2.7;
-            i {
-                margin-right: .5rem;
-                width: 20px;
-            }  
-            a{
-                text-decoration: none;
-                &:hover{
-                color: $color__link-hover;
-                }
-            }
-        }
-        #archives-2 ul{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            a{
-                text-decoration: none;
-            }
-        }
+    @include entryHeader;
+    .read-more {
+        text-decoration:none;
+        padding:0.8rem $base__space-unit;
+        border: $second__border;
+        text-transform: uppercase;
+        font-family: $font__headings,sans-serif;
+        color: $color__text-main;
+        font-size: 0.9rem;
+        &:hover{
+        background: #248a83;  
+        color: $color__background-body;
+        }  
     }
 }
+#archives-2 ul{
+  @include archives;
+}
+
 //styling for each tag page
 .tag .site-content{
     display: flex;

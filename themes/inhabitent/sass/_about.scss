@@ -1,18 +1,9 @@
 .page-template-about .main-navigation{
 	background: transparent;
 	height: 0px;
-	.menu a{
-		color: $color__background-body;
-	}
-	.fa-search{
-		color: $color__background-body;
-		&:hover{
-		color:$color__link-hover2;
-		}
-	}
+	@include headerColorMain;
 	.header-logo{
-		background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
-    	background-size: contain;
+		@include logoWhite;
     }
 }
 .page-template-about .entry-header {

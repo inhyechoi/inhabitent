@@ -1,14 +1,5 @@
 .archive .main-navigation{
-    background-color: $color__background-body;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
-    #primary-menu a:hover{
-		color:$color__link-hover;
-	}
-    i:hover{
-		color:$color__link-hover;
-	}
+    @include headerSubMain;
 }
 .archive .page-header{
     display:flex;

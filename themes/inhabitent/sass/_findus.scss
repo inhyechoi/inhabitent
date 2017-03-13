@@ -1,84 +1,41 @@
 .page-template-find-us .main-navigation{
-    border-bottom: $base__border;
-    background-color: $color__background-body;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1;
-    #primary-menu a:hover{
-		color:$color__link-hover;
-	}
-    i:hover{
-		color:$color__link-hover;
-	}
+    @include headerSubMain;
 }
 .page-template-find-us #content{
-    display: flex;
-    width: $base__website-width;
-    margin: 0 auto;
-    #primary{
-        width:75%;
-        padding: 5% 5% 0 0;
-        border-right: $base__border;
-        article{
-            margin-bottom: 8rem;
-        }
-        .entry-header{
-            line-height: 0;
-            color: $color__background-body;
-            text-transform: uppercase;
-            h1{
-                font-size: 2.5rem;
-                width: 36rem;
-                line-height: 1.3;
-                color:$color__text-main;
-            }
-        }
-        .entry-content{
-            h2{
-                font-size: 2rem;
-                letter-spacing: 0.1rem;
-            }
-            .wpcf7-validates-as-required{
-                background-color: #f2f2f2;
-            }
-            .wpcf7-text{
-                background-color: #f2f2f2;
-            }
-            textarea{
-                background-color:#f2f2f2;
-            }
+    @include siteContent;
+    article{
+        margin-bottom: 8rem;
+    }
+    .entry-header{
+        line-height: 0;
+        color: $color__background-body;
+        text-transform: uppercase;
+        h1{
+            font-size: 2.5rem;
+            width: 36rem;
+            line-height: 1.3;
+            color:$color__text-main;
         }
     }
-    #secondary{
-        padding: 6rem 0 0 5%;
-        width: 28%;
+    .entry-content{
         h2{
+            font-size: 2rem;
             letter-spacing: 0.1rem;
-            text-transform: uppercase;
         }
-        .day-of-week{
-            font-weight: bold;
+        .wpcf7-validates-as-required{
+            background-color: #f2f2f2;
         }
-        .textwidget{
-            line-height: 2.7;
-            i {
-                margin-right: .5rem;
-                width: 20px;
-            }  
-            a{
-                text-decoration: none;
-            }
-            .bolden{
-                font-weight: bold;
-            }
+        .wpcf7-text{
+            background-color: #f2f2f2;
         }
-        #archives-2 ul{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            a{
-                text-decoration: none;
-            }
+        textarea{
+            background-color:#f2f2f2;
         }
     }
 }
+   
+#archives-2 ul{
+   @include archives;
+}
+   
+
