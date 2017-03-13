@@ -68,23 +68,23 @@
                 width: auto;
                 transform: translate(-50%, -52%);
             }
-        }
-        .archive-product-text{
-            padding: 0 1.2rem;
-            .archive-title{
-                line-height: 0.8;
-                white-space: nowrap;
-                overflow: hidden;
-                &:after{
-                    content: '.............................';
-                    display:inline;
-                    overflow: hidden;
-                }
-                p{
-                    display: inline-block;
-                }
-            } 
-        }      
+        }   
     }
 }
 
+.archive .archive-product-text{
+    padding: 0 1.2rem;
+    .archive-title{
+        line-height: 0.8;
+        white-space: nowrap;
+        overflow: hidden;
+        &:after{
+            content: '.............................';
+            display:inline;
+            overflow: hidden;
+        }
+        p{
+            display: inline-block;
+        }
+    } 
+}   
