@@ -1,7 +1,7 @@
 # inhabitent
 
 Creating the custom Wordpress theme
-![main image] (themes/inhabitent/images/screenshot/screenshot.png)
+<img src="https://github.com/inhyechoi/inhabitent/blob/master/themes/inhabitent/images/screenshot/screenshot.png" height="500" width="auto" alt="Inhabitent Main Image">
 
 
 
